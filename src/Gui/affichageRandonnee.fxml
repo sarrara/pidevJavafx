@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AffichageRandonneeController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="52.0" prefWidth="1143.0" style="-fx-background-color: #07204a;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="650.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../Images/emptyAsset%205.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/exit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <ImageView fx:id="image" fitHeight="355.0" fitWidth="391.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="sarra" layoutX="407.0" layoutY="76.0" prefHeight="38.0" prefWidth="332.0" text="Randonnee" textAlignment="CENTER" />
+      <Label layoutX="426.0" layoutY="112.0" prefHeight="25.0" prefWidth="193.0" text="nom " />
+      <TextField fx:id="tfdate" layoutX="427.0" layoutY="316.0" prefHeight="25.0" prefWidth="356.0" />
+      <TextField fx:id="tfloc" layoutX="426.0" layoutY="372.0" prefHeight="25.0" prefWidth="356.0" />
+      <TextField fx:id="tfnbr" layoutX="427.0" layoutY="264.0" prefHeight="25.0" prefWidth="356.0" />
+      <TextField fx:id="tfprix" layoutX="426.0" layoutY="209.0" prefHeight="25.0" prefWidth="356.0" />
+      <TextField fx:id="tfnom" layoutX="427.0" layoutY="146.0" prefHeight="25.0" prefWidth="356.0" />
+      <Label layoutX="426.0" layoutY="184.0" prefHeight="25.0" prefWidth="193.0" text="prix" />
+      <Label layoutX="426.0" layoutY="239.0" prefHeight="25.0" prefWidth="193.0" text="Nombre de places" />
+      <Label layoutX="426.0" layoutY="347.0" prefHeight="25.0" prefWidth="193.0" text="Localisation" />
+      <Label layoutX="426.0" layoutY="289.0" prefHeight="25.0" prefWidth="193.0" text="Date" />
+      <Button fx:id="btnres" layoutX="593.0" layoutY="429.0" mnemonicParsing="false" text="Reserver" />
+      <Button fx:id="qr" layoutX="471.0" layoutY="429.0" mnemonicParsing="false" onAction="#generateqr" prefHeight="25.0" prefWidth="106.0" text="qr" />
+   </children>
+</AnchorPane>

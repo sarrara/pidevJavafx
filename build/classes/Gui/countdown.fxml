@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="Gui.CountdownController">
+   <children>
+      <HBox fx:id="pane" layoutX="228.0" layoutY="94.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="one1" text=":" />
+            <Label fx:id="two2" text=":" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

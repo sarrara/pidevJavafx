@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="628.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.ModifierController1">
+   <children>
+      <Label layoutX="76.0" layoutY="319.0" prefHeight="27.0" prefWidth="153.0" text="nombre de places">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="405.0" prefHeight="27.0" prefWidth="108.0" text="Prix:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="366.0" text="Date:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfprix" layoutX="232.0" layoutY="405.0" prefHeight="34.0" prefWidth="153.0" promptText="Prix" />
+      <Button fx:id="btn_confirmer_ajout_obj" layoutX="728.0" layoutY="558.0" mnemonicParsing="false" onAction="#AjouterRandonnee">
+         <graphic>
+            <ImageView fx:id="btn_modifer" fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/2040995.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="152.0" layoutY="54.0" text="modifer une randonnée:" textFill="#0e5f9e">
+         <font>
+            <Font name="Garamond Bold" size="52.0" />
+         </font>
+      </Label>
+      <HBox layoutX="295.0" layoutY="214.0" prefHeight="27.0" prefWidth="165.0" />
+      <HBox layoutX="182.0" layoutY="261.0" prefHeight="34.0" prefWidth="231.0">
+         <children>
+            <TextField fx:id="tfloc" prefHeight="34.0" prefWidth="212.0" promptText="Localisation">
+               <opaqueInsets>
+                  <Insets left="60.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="45.0" right="30.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <ImageView fitHeight="26.0" fitWidth="36.0" layoutX="36.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/duree.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="64.0" layoutX="28.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/flouss.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="16.0" layoutY="176.0" prefHeight="27.0" prefWidth="173.0" text="Nom :" textOverrun="CLIP">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfnom" layoutX="227.0" layoutY="173.0" prefHeight="34.0" prefWidth="153.0" promptText="Nom">
+         <opaqueInsets>
+            <Insets left="60.0" />
+         </opaqueInsets>
+      </TextField>
+      <DatePicker fx:id="dpdate" layoutX="234.0" layoutY="362.0" prefHeight="34.0" prefWidth="149.0" />
+      <HBox layoutX="24.0" layoutY="455.0" prefHeight="50.0" prefWidth="369.0">
+         <children>
+            <Button fx:id="btn_AjouterIcone" mnemonicParsing="false" onAction="#AjouterIcone" prefHeight="26.0" prefWidth="149.0" text="Ajouter une image">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField fx:id="tfimage" prefHeight="25.0" prefWidth="153.0">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <ImageView fitHeight="36.0" fitWidth="38.0" layoutX="31.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/personnes.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfnbplace" alignment="TOP_LEFT" layoutX="232.0" layoutY="313.0" prefHeight="34.0" prefWidth="153.0" promptText="Nombre de places" />
+      <ImageView fitHeight="65.0" fitWidth="39.0" layoutX="21.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/loc.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="60.0" layoutY="259.0" prefHeight="36.0" prefWidth="153.0" text="Localisation:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="16.0" layoutY="214.0" prefHeight="27.0" prefWidth="199.0" text="Choisir une activité :   ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbactiv" layoutX="225.0" layoutY="215.0" prefHeight="34.0" prefWidth="156.0">
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+      </ComboBox>
+
+         
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
